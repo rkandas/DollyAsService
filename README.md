@@ -2,7 +2,7 @@
 
 Note: The service and the examples are tested only in M1 Macbook pro.
 
-This repo is supplement for the medium article.
+This repo is supplement for the medium article https://medium.com/@raju.kandasamy/c6505efe99f0?source=friends_link&sk=61180f35ae03d6cf7a773f96fe98b873
 
 Install depentencies
 ``` pip install -r requirements.txt ```
