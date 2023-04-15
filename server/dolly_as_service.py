@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 END_KEY = "### End"
-model_path = "databricks/dolly-v2-2-8b"
+model_path = "databricks/dolly-v2-3b"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = AutoModelForCausalLM.from_pretrained(model_path, pad_token_id=tokenizer.eos_token_id)

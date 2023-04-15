@@ -2,7 +2,7 @@ from DollyClientProxy import DollyClientProxy
 from langchain import PromptTemplate
 
 ai = DollyClientProxy()
-template = "### Instruction:\nClassify these animals {text} into {classification}\n\nExample:\nElephant - Mammal, Crocodile - Reptile, Tiger - Mammal ### Response:\n"
+template = "### Instruction:\nClassify these animals {text} into {classification}\n\nExample:\nElephant - Mammal, Crocodile - Reptile, Tiger - Mammal \n\n### Response:\n"
 prompt_template = PromptTemplate(template=template, input_variables=["text","classification"])
 print(ai.prompt_generate
       (prompt_template.format(text=f'Elephant, Snake, Zebra, Tiger, Catfish, Parrot, \
